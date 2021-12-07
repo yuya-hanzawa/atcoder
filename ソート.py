@@ -44,3 +44,36 @@ def merge(left, right):
     if r_i < len(right):
         merged.extend(right[r_i:])
     return merged
+
+# クイックソート
+# O(NlogN) in-place ◯ 安定性 ×
+def quick_sort(arr):
+    left = []
+    right = []
+    if len(arr) <= 1:
+        return arr
+
+    ref = arr[0]
+    ref_count = 0
+
+    for ele in arr:
+        if ele < ref:
+            left.append(ele)
+        elif ele > ref:
+            right.append(ele)
+        else:
+            ref_count += 1
+    left = quick_sort(left)
+    right = quick_sort(right)
+    return left + [ref] * ref_count + right
+
+# バケットソート
+# 整数でしか使えない
+def bucket_sort(arr):
+  arrc = [0]*(max(arr)+1)
+  for i in arr:
+    arrc[i] += 1
+  ans=[]
+  for j in range(1, len(arrc)):
+    ans.extend([j]*arrc[j])
+  return ans 
