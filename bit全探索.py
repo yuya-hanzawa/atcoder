@@ -1,4 +1,4 @@
-# O(n*2^n)
+# Bit全探索 O(n*2^n)
 n=int(input())
 
 for i in range(2**n): #nは隙間の数

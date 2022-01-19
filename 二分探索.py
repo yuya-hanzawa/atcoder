@@ -1,3 +1,5 @@
+# 二分探索
+
 def binary_search(data, value):
     left = 0
     right = len(data) - 1
