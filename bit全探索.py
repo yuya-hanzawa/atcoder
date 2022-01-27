@@ -16,3 +16,4 @@ for i in range(2**n): #nは隙間の数
 
 # bit全探索の練習
 # https://atcoder.jp/contests/abc128/tasks/abc128_c
+# https://atcoder.jp/contests/typical90/tasks/typical90_b

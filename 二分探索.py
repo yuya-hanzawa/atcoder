@@ -12,3 +12,5 @@ def binary_search(data, value):
         else:
             right = mid - 1
     return -1 
+
+# https://atcoder.jp/contests/typical90/tasks/typical90_g
